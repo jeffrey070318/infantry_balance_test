@@ -1,0 +1,97 @@
+{
+  "status": "static_geometry_evidence_only",
+  "source_assembly": "腿A.STEP",
+  "limit_component": "腿部限位A",
+  "limit_bounding_box_mm": {
+    "minimum": [
+      -175.76762107,
+      -177.8673199,
+      -495.03617803
+    ],
+    "maximum": [
+      -161.76759607,
+      -113.82846655,
+      -448.6206823
+    ]
+  },
+  "comparisons": [
+    {
+      "component": "连杆2改A",
+      "coincident_axis_count": 2,
+      "sample_point_distance_mm": 0.0,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounding_boxes_overlap": true
+    },
+    {
+      "component": "连杆5A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 0.7855633079630391,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounding_boxes_overlap": true
+    },
+    {
+      "component": "髋关节A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 3.69097611693312,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounding_boxes_overlap": true
+    },
+    {
+      "component": "连杆4改A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 3.854845834879871,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounding_boxes_overlap": true
+    },
+    {
+      "component": "连杆3A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 10.447662300094718,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounding_boxes_overlap": true
+    },
+    {
+      "component": "连杆1改A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 59.57338340568144,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        15.775874920000007,
+        0.0
+      ],
+      "bounding_boxes_overlap": false
+    },
+    {
+      "component": "小腿A",
+      "coincident_axis_count": 0,
+      "sample_point_distance_mm": 83.76448506020826,
+      "bounding_box_axis_gap_mm": [
+        0.0,
+        55.16731625,
+        0.0
+      ],
+      "bounding_boxes_overlap": false
+    }
+  ],
+  "warning": "点云最近距离仅用于排序可能的接触构件；不能代替实体碰撞、SolidWorks配合范围或人工转动装配检查。"
+}

@@ -1,0 +1,21 @@
+# Local analysis and rendered PDF cache
+tmp/
+.agents/
+
+# MATLAB / Simulink generated files
+**/slprj/
+**/codegen/
+**/__pycache__/
+*.pyc
+*.slxc
+*.autosave
+*.asv
+*.mexw64
+*.mexa64
+*.mexmaci64
+
+# Editor and OS files
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

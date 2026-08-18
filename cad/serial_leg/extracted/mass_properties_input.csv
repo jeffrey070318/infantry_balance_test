@@ -1,0 +1,9 @@
+body,solidworks_source,mass_kg,com_x_m,com_y_m,com_z_m,inertia_xx_kg_m2,inertia_yy_kg_m2,inertia_zz_kg_m2,status,notes
+body_assembly,底盘机体总成,,,,,,,,待采集,
+link1_assembly,连杆1改A及固定件,,,,,,,,待采集,
+link2_assembly,连杆2改A及固定件,,,,,,,,待采集,
+link3_assembly,连杆3A及固定件,,,,,,,,待采集,
+link4_wheel_assembly,连杆4改A+轮边减速箱+车轮,,,,,,,,待采集,
+link5_assembly,连杆5A及固定件,,,,,,,,待采集,
+hip_actuator_assembly,DM8009+链轮+轴+安装件,,,,,,,,待采集,
+wheel_actuator_assembly,M3508+P19+CAD轮边减速箱,,,,,,,,待采集,
