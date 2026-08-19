@@ -2,7 +2,7 @@
 
 这里用于把 SolidWorks 串腿底盘装配体导出的 Simscape Multibody XML 导入 MATLAB，并逐步建立真实机构、关节驱动和轮地接触模型。
 
-当前状态：SolidWorks 源文件已确认，MATLAB R2024b 的 Simscape Multibody 可用；还缺少从 SolidWorks 插件导出的 XML，因此暂时不能执行实际装配体导入。
+当前状态：完整底盘和右腿都已实际导出。完整底盘模型过大且配合冲突较多；单独导出的 `腿A.SLDASM` 已成功生成 Simscape 模型，删除 6 个由重复约束产生的无效关节后能够编译，并完成 `0.05 s` 短时求解。
 
 ## 当前对应的 SolidWorks 装配体
 
@@ -25,6 +25,18 @@ result = import_serial_leg_cad_simscape;
 
 5. 先检查导入后的刚体、关节和坐标轴，不要立即加入复杂接触。
 6. 再依次加入关节驱动、关节传感器、轮子和地面接触。
+
+## 当前右腿模型
+
+右腿导出文件放在本地 `right_leg_import/` 中。重新生成并验证清理后的模型：
+
+```matlab
+cd('D:\Project\RMproject\infantry_balance_test')
+startup_serial_leg_6dof
+result = build_sanitized_right_leg_simscape(true);
+```
+
+脚本会保留原始导入模型，并另外生成 `serial_leg_right_cad_sanitized.slx`。当前清理只删除 Simscape 编译器明确报告“两端已被刚性连接”的 6 个冗余关节，不代表关节拓扑已经适合接入控制器。下一步仍需识别真正的髋、膝和轮轴自由度，并删除轴承、螺钉等产生的无关运动副。
 
 ## 重要边界
 

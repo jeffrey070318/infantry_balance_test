@@ -14,6 +14,12 @@ tmp/
 *.mexa64
 *.mexmaci64
 
+# SolidWorks / Simscape Multibody generated imports
+matlab/serial_leg_6dof/simscape/import/*
+!matlab/serial_leg_6dof/simscape/import/README.md
+matlab/serial_leg_6dof/simscape/right_leg_import/*
+!matlab/serial_leg_6dof/simscape/right_leg_import/README.md
+
 # Editor and OS files
 *~
 .DS_Store
